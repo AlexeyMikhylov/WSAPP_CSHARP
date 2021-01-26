@@ -1,0 +1,14 @@
+F:\МДК 05.02\app_XX\app_XX\bin\Debug\app_XX.exe.config
+F:\МДК 05.02\app_XX\app_XX\bin\Debug\app_XX.exe
+F:\МДК 05.02\app_XX\app_XX\bin\Debug\app_XX.pdb
+F:\МДК 05.02\app_XX\app_XX\obj\Debug\app_XX.csprojAssemblyReference.cache
+F:\МДК 05.02\app_XX\app_XX\obj\Debug\MainWindow.g.cs
+F:\МДК 05.02\app_XX\app_XX\obj\Debug\App.g.cs
+F:\МДК 05.02\app_XX\app_XX\obj\Debug\app_XX_MarkupCompile.cache
+F:\МДК 05.02\app_XX\app_XX\obj\Debug\app_XX_MarkupCompile.lref
+F:\МДК 05.02\app_XX\app_XX\obj\Debug\MainWindow.baml
+F:\МДК 05.02\app_XX\app_XX\obj\Debug\app_XX.g.resources
+F:\МДК 05.02\app_XX\app_XX\obj\Debug\app_XX.Properties.Resources.resources
+F:\МДК 05.02\app_XX\app_XX\obj\Debug\app_XX.csproj.GenerateResource.cache
+F:\МДК 05.02\app_XX\app_XX\obj\Debug\app_XX.exe
+F:\МДК 05.02\app_XX\app_XX\obj\Debug\app_XX.pdb
