@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-E:\МДК 05.02\app_XX\app_XX\obj\Debug\
+F:\МДК 05.02\app_XX\app_XX\obj\Debug\
 app_XX
 none
 false
 DEBUG;TRACE
-E:\МДК 05.02\app_XX\app_XX\App.xaml
-11151548125
+F:\МДК 05.02\app_XX\app_XX\App.xaml
+3426454576
 
-6-1049819441
+7-1669533758
 131569487696
-MainWindow.xaml;
+AddWindow.xaml;EditWindow.xaml;MainWindow.xaml;
 
-True
+False
 
