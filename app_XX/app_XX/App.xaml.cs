@@ -13,6 +13,7 @@ namespace app_XX
     /// </summary>
     public partial class App : Application
     {
+        //public static string MainConnection = @"Data Source=LAPTOP-R79E5F1S\SQLEXPRESS;Initial Catalog=WSDEMOEX;Integrated Security=True";
         public static string MainConnection = "Data Source=vc-stud-mssql1;Initial Catalog=user53_db;User ID=user53_db;Password=user53";
     }
 }

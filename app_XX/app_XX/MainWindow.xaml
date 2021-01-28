@@ -6,17 +6,17 @@
         xmlns:local="clr-namespace:app_XX"
         xmlns:System="clr-namespace:System;assembly=mscorlib" x:Class="app_XX.MainWindow"
         mc:Ignorable="d"
-        Title="MainWindow" Height="750" Width="1250" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen">
+        Title="MainWindow" Height="700" Width="1250" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize" SizeToContent="WidthAndHeight">
     <Grid>
-        <Canvas HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="1242" Background="#FFEBEBEB">
-            <ComboBox xmlns:sys="clr-namespace:System;assembly=mscorlib" x:Name="cmbx_tableselection" HorizontalContentAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Top" Width="72" Height="23" SelectedIndex="0">
+        <Canvas HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="1244" Background="#FFEBEBEB">
+            <ComboBox xmlns:sys="clr-namespace:System;assembly=mscorlib" x:Name="cmbx_tableselection" HorizontalContentAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Top" Width="72" Height="23" SelectedIndex="0" Canvas.Left="25">
                 <ComboBox.Resources>
                     <sys:Double x:Key="{x:Static SystemParameters.VerticalScrollBarWidthKey}">0</sys:Double>
                 </ComboBox.Resources>
                 <ComboBoxItem Content="Select table"/>
                 <ComboBoxItem Content="clients"/>
             </ComboBox>
-            <ComboBox xmlns:sys="clr-namespace:System;assembly=mscorlib" x:Name="cmbx_searchselection" HorizontalContentAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Height="23" Canvas.Left="245" SelectedIndex="0" IsReadOnly="True">
+            <ComboBox xmlns:sys="clr-namespace:System;assembly=mscorlib" x:Name="cmbx_searchselection" HorizontalContentAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Height="23" Canvas.Left="270" SelectedIndex="0" IsReadOnly="True">
                 <ComboBox.Resources>
                     <sys:Double x:Key="{x:Static SystemParameters.VerticalScrollBarWidthKey}">0</sys:Double>
                 </ComboBox.Resources>
@@ -27,39 +27,47 @@
                 <ComboBoxItem Content="phone"/>
                 <ComboBoxItem Content="email"/>
             </ComboBox>
-            <TextBox x:Name="txtbx_search" VerticalContentAlignment="Center" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="230" Canvas.Left="315" KeyUp="txtbx_search_KeyUp"/>
+            <TextBox x:Name="txtbx_search" VerticalContentAlignment="Center" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="230" Canvas.Left="340" KeyUp="txtbx_search_KeyUp"/>
 
-            <ComboBox xmlns:sys="clr-namespace:System;assembly=mscorlib" x:Name="cmbx_genderfilter" HorizontalContentAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Top" Width="78" Height="23" Canvas.Left="167" SelectedIndex="0" SelectionChanged="cmbx_genderfilter_SelectionChanged" >
+            <ComboBox xmlns:sys="clr-namespace:System;assembly=mscorlib" x:Name="cmbx_genderfilter" HorizontalContentAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Top" Width="78" Height="23" Canvas.Left="192" SelectedIndex="0" SelectionChanged="cmbx_genderfilter_SelectionChanged" >
                 <ComboBox.Resources>
                     <sys:Double x:Key="{x:Static SystemParameters.VerticalScrollBarWidthKey}">0</sys:Double>
                 </ComboBox.Resources>
-                <ComboBoxItem Content="gender filter"/>
+                <ComboBoxItem Content="Gender filter"/>
                 <ComboBoxItem Content="all"/>
                 <ComboBoxItem Content="only male"/>
                 <ComboBoxItem Content="only female"/>
             </ComboBox>
 
-            <ComboBox xmlns:sys="clr-namespace:System;assembly=mscorlib" x:Name="cmbx_rowsammount" HorizontalContentAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Top" Width="95" Height="23" Canvas.Left="72" SelectedIndex="0" SelectionChanged="cmbx_rowsammount_SelectionChanged" >
+            <ComboBox xmlns:sys="clr-namespace:System;assembly=mscorlib" x:Name="cmbx_rowsammount" HorizontalContentAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Top" Width="95" Height="23" Canvas.Left="97" SelectedIndex="0" SelectionChanged="cmbx_rowsammount_SelectionChanged" >
                 <ComboBox.Resources>
                     <System:Double x:Key="{x:Static SystemParameters.VerticalScrollBarWidthKey}">0</System:Double>
                 </ComboBox.Resources>
-                <ComboBoxItem Content="rows ammount"/>
+                <ComboBoxItem Content="Rows ammount"/>
                 <ComboBoxItem Content="10"/>
                 <ComboBoxItem Content="50"/>
                 <ComboBoxItem Content="200"/>
             </ComboBox>
 
-            <ComboBox x:Name="cmbx_order" HorizontalAlignment="Left" VerticalAlignment="Top" Width="64" Height="23" Canvas.Left="545" SelectedIndex="0" SelectionChanged="cmbx_order_SelectionChanged" HorizontalContentAlignment="Center">
+            <ComboBox x:Name="cmbx_order" HorizontalAlignment="Left" VerticalAlignment="Top" Width="64" Height="23" Canvas.Left="570" SelectedIndex="0" SelectionChanged="cmbx_order_SelectionChanged" HorizontalContentAlignment="Center">
                 <ComboBox.Resources>
                     <System:Double x:Key="{x:Static SystemParameters.VerticalScrollBarWidthKey}">0</System:Double>
                 </ComboBox.Resources>
-                <ComboBoxItem Content="order by"/>
+                <ComboBoxItem Content="Order by"/>
                 <ComboBoxItem Content="last name"/>
                 <ComboBoxItem Content="last seen"/>
                 <ComboBoxItem Content="requests"/>
             </ComboBox>
+            <Button x:Name="btn_addclient" Content="Add client" Canvas.Left="694" Width="75" Height="23" BorderBrush="#FFACACAC" Background="#FFEBEBEB" Click="btn_addclient_Click"/>
+            <Button x:Name="btn_editclient" Content="Edit client" Canvas.Left="769" Width="75" Height="23" BorderBrush="#FFACACAC" Background="#FFEBEBEB" Click="btn_editclient_Click"/>
+            <Button x:Name="btn_update" Content="🔄" Width="25" Height="23" BorderBrush="#FFACACAC" Background="#FFEBEBEB" Click="btn_update_Click"/>
+            <Button x:Name="btn_deleteclient" Content="Delete client" Canvas.Left="844" Width="75" Height="23" BorderBrush="#FFACACAC" Background="#FFEBEBEB" Click="btn_deleteclient_Click"/>
+            <Button x:Name="btn_showbirthday" Content="Birthday" Canvas.Left="634" Width="60" Height="23" BorderBrush="#FFACACAC" Background="#FFEBEBEB" Click="btn_showbirthday_Click" />
         </Canvas>
-        <DataGrid x:Name="grid_clients" HorizontalAlignment="Left" Height="681" Margin="10,28,0,0" VerticalAlignment="Top" Width="1222"/>
+        <DataGrid x:Name="grid_clients" HorizontalAlignment="Left" Height="610" Margin="10,49,0,0" VerticalAlignment="Top" Width="1222" SelectionChanged="grid_clients_SelectionChanged" CanUserAddRows="False" IsReadOnly="True"/>
+        <Label x:Name="lbl_totalrows" Content="Label" Margin="70,23,1136,622"/>
+        <Label x:Name="lbl_currentrows" Content="Label" Margin="10,23,1196,622"/>
+        <Label x:Name="lbl_deletemelater_Copy1" Content="из" Margin="48,23,1174,622"/>
 
     </Grid>
 </Window>
